@@ -1,0 +1,5 @@
+ALTER TABLE cuentas
+ADD CONSTRAINT fk_cliente
+FOREIGN KEY (cliente_id)
+REFERENCES clientes(id)
+ON DELETE RESTRICT;
